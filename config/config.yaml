@@ -1,0 +1,25 @@
+---
+database:
+  username: l0
+  password: secret_password
+  name: L0
+  port: 5432
+  host: localhost
+  max_conn_lifetime: 15s
+  max_conn_lifetime_jitter: 3s
+  max_conn_idel_time: 300s
+  health_check_period: 60s
+  max_conn: 15
+  min_conn: 5
+
+http_server:
+  address: localhost:8080
+  timeout: 5s
+  idel_timeout: 30s
+  shutdown_timeout: 3s
+  
+nats:
+  address: localhost:4222
+  cluster_id: test-cluster
+  client_id: publisher
+  subject: order-topic

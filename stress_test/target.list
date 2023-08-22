@@ -1,0 +1,30 @@
+GET http://localhost:8080/orders/b563feb7b2b84b6test
+GET http://localhost:8080/orders/b563feb7b2b84b6test1
+GET http://localhost:8080/orders/b563feb7b2b84b6test2
+GET http://localhost:8080/orders/b563feb7b2b84b6test3
+GET http://localhost:8080/orders/test
+GET http://localhost:8080/orders/notfound
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+@./stress_test/test_json/order.json
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+@./stress_test/test_json/order0.json
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+@./stress_test/test_json/order1.json
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+@./stress_test/test_json/order2.json
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+@./stress_test/test_json/order_not_found.json
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+@./stress_test/test_json/order_bad_json.json
