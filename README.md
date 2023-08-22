@@ -48,3 +48,9 @@ make run_publisher
 ```
 
 В качестве графического интерфейса открыть файл "L0/ui/index.html" в любом браузере.
+
+Результаты стресс теста:
+
+![Alt text](stress_test/Result.png)
+
+![Alt text](stress_test/Plot.png)
